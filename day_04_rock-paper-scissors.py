@@ -27,6 +27,7 @@ scissors_ui = '''
 ---.__(___)
 '''
 
+
 choices = ["rock", "paper", "scissors"]
 yourChoice = input("Choose rock, paper or scissors: ")
 computerChoice = choices[random.randint(0, 2)]
