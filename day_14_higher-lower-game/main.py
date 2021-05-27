@@ -1,14 +1,14 @@
 import art
-import game_data
+import data
 import random
 
 current_score = 0
 print(art.logo)
 while True:
-    celebrityA = random.choice(game_data.data)
-    celebrityB = random.choice(game_data.data)
+    celebrityA = random.choice(data.data)
+    celebrityB = random.choice(data.data)
     while celebrityA.get("name") == celebrityB.get("name"):
-        celebrityB = random.choice(game_data.data)
+        celebrityB = random.choice(data.data)
 
     print(f"Compare A: ")
     print(f"{celebrityA.get('name')}, a {celebrityA.get('description')}, from {celebrityA.get('country')}")
